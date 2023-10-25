@@ -16,48 +16,101 @@ body {
   justify-content: center;
 }
 
-.fondo {
+.container {
   height: 100dvh;
   width: 100dvw;
   background-image: url(Imagenes/fondo-1.png);
   background-repeat: no-repeat;
   border: none;
   background-size: cover;
-  background-position: center;
-  position: absolute;
-  filter: blur(1.9px);
-  z-index: -2;
 }
 
 .filter {
   height: 100dvh;
   width: 100dvw;
-  background: #020314;
-  background: -webkit-linear-gradient(to top, #020313 40%, #585a80 82%);
-  background: -moz-linear-gradient(to top, #020314 40%, #585a80 82%);
-  background: linear-gradient(to top, #020314 45%, #585a80 82%);
-  opacity: 63%;
-  position: absolute;
-  z-index: -1;
+  background: -webkit-linear-gradient(
+    to top,
+    rgba(2, 3, 19, 0.63) 45%,
+    rgba(87, 89, 127, 0.63) 82%
+  );
+  background: -moz-linear-gradient(
+    to top,
+    rgba(2, 3, 19, 0.63) 45%,
+    rgba(87, 89, 127, 0.63) 82%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(2, 3, 19, 0.63) 45%,
+    rgba(87, 89, 127, 0.63) 82%
+  );
 }
 
 .layout {
   height: 100dvh;
   width: 100dvw;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .info {
-  height: 70dvh;
-  width: 20%; 
+  height: 80dvh;
+  width: 20%;
   background-color: black;
 }
 
 .speech-box {
-  height: 70dvh;
+  height: 80dvh;
   width: 55dvw;
-  background-color: #fff;
+  background-color: #162b498c;
+  border-width: 0;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box {
+  height: auto;
+  width: 40%;
+}
+
+.img-box img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.content-speech-box {
+  width: 57%;
+  height: 100%;
+  background-color:rgba(87, 89, 127, 0.9) ;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-speech-box header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.texto, .icono {
+  display: inherit;
+  width: 50%;
+  padding: .5rem .5rem;
+}
+
+.texto {
+  justify-content: flex-start;
+}
+
+.icono {
+  justify-content: flex-end;
 }

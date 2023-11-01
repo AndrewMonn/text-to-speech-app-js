@@ -76,8 +76,7 @@ body {
 }
 
 .img-box img {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1rem 0 0 1rem;
   width: 100%;
   height: 100%;
 }
@@ -85,7 +84,7 @@ body {
 .content-speech-box {
   width: 57%;
   height: 100%;
-  background-color:rgba(87, 89, 127, 0.9) ;
+  background-color: rgba(87, 89, 127, 0.9);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
@@ -101,10 +100,11 @@ body {
   width: 100%;
 }
 
-.texto, .icono {
+.texto,
+.icono {
   display: inherit;
   width: 50%;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .texto {

@@ -35,12 +35,31 @@
                 <div class="texto">
                   <h3>TSS</h3>
                 </div>
-                <div class="icono"> icono </div>
+                <div class="icono">icono</div>
               </header>
               <div class="speech-space">
-                <textarea name="text-box" id="text-box-id" cols="30" rows="10"></textarea>
-                <div class="text-speech-box"><p>Ingresa tu texto arriba y presiona "reproducir". Puede elegir una voz diferente seleccionando una
-opción en el menú desplegable.</p></div>
+                <input
+                  type="text"
+                  class="text-box"
+                  name="text-box"
+                  id="text-box-id"
+                />
+                <div class="text-speech-box">
+                  <form action="#" method="GET">
+                    <label for="text-box-label">
+                      Ingresa tu texto arriba y presiona "reproducir". Puede
+                      elegir una voz diferente seleccionando una opción en el
+                      menú desplegable.
+                    </label>
+                    <select name="speech-speed" id="speech-speed">
+                      <option value="1.0">x1.0</option>
+                      <option value="1.5">x1.5</option>
+                      <option value="2.0">x2.0</option>
+                      <option value="2.5">x2.5</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+                  </form>
+                </div>
               </div>
             </div>
           </article>

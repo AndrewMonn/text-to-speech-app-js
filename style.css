@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&family=Poppins:wght@100;400;500;600;700;900&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+
 *,
 ::before,
 ::after {
@@ -6,6 +9,8 @@
   border: 0;
   outline: none;
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto','Montserrat','Poppins';
 }
 
 body {
@@ -49,20 +54,14 @@ body {
   height: 100dvh;
   width: 100dvw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-}
-
-.info {
-  height: 80dvh;
-  width: 20%;
-  background-color: black;
 }
 
 .speech-box {
   height: 80dvh;
   width: 55dvw;
-  background-color: #162b498c;
+  background-color: rgba(22, 43, 73, 0.549);
   border-width: 0;
   border-radius: 1rem;
   padding: 0.8rem;
@@ -113,4 +112,32 @@ body {
 
 .icono {
   justify-content: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#txt-box {
+  height: 30dvh;
+  width: 20dvw;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(38, 52, 89, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 20px;
+  border: none;
+  resize: none;
+  border-radius: 20px;
+  outline: 0;
+}
+
+#speak-btn {
+  padding: 10px;
+  cursor: pointer;
 }

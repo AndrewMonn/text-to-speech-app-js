@@ -15,17 +15,6 @@
     <div class="container">
       <div class="filter">
         <section class="layout">
-          <article class="info">
-            <div>
-              <p></p>
-            </div>
-            <div>
-              <p></p>
-            </div>
-            <div>
-              <p></p>
-            </div>
-          </article>
           <article class="speech-box">
             <div class="img-box">
               <img src="Imagenes/hyuuui.png" alt="Imagen" />
@@ -38,28 +27,11 @@
                 <div class="icono">icono</div>
               </header>
               <div class="speech-space">
-                <input
-                  type="text"
-                  class="text-box"
-                  name="text-box"
-                  id="text-box-id"
-                />
-                <div class="text-speech-box">
-                  <form action="#" method="GET">
-                    <label for="text-box-label">
-                      Ingresa tu texto arriba y presiona "reproducir". Puede
-                      elegir una voz diferente seleccionando una opción en el
-                      menú desplegable.
-                    </label>
-                    <select name="speech-speed" id="speech-speed">
-                      <option value="1.0">x1.0</option>
-                      <option value="1.5">x1.5</option>
-                      <option value="2.0">x2.0</option>
-                      <option value="2.5">x2.5</option>
-                    </select>
-                    <button type="submit">Enviar</button>
+                <form action="">
+                  <label for="txt-box">Text to Speech</label>
+                <textarea id="txt-box">  Ingresa tu texto aquí</textarea>
+                    <button type="submit" id="speak-btn">Enviar</button>
                   </form>
-                </div>
               </div>
             </div>
           </article>

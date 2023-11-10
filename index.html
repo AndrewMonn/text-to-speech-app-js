@@ -28,13 +28,19 @@
               </header>
               <div class="speech-space">
                 <form action="">
-                  <label for="txt-box">Text to Speech</label>
-                <textarea id="txt-box" placeholder="Ingresa tu texto aquí"></textarea>
-                <div class="voz">
-                  <label for="voice">Voz</label>
-                  <select id="voice"></select>
-                </div>
-                    <button type="submit" id="speak-btn">Audio</button>
+                  <div class="row">
+                    <h2>Text to Speech</h2>
+                    <textarea placeholder="Ingresa tu texto aquí..."></textarea>
+                  </div>
+                  <div class="row" id="voz">
+                    <label for="voice">Voz</label>
+                    <div class="outro">
+                      <select id="voice"></select>
+                    </div>
+                  </div>
+                  <div class="butom">
+                    <button>Escuchar</button>
+                  </div>
                   </form>
               </div>
             </div>
@@ -42,7 +48,6 @@
         </section>
       </div>
     </div>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=W0ikPsWd"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -46,7 +46,7 @@ speechBtn.addEventListener("click", (e) => {
         } else {
         }
       }, 500);
-      
+
       if (isSpeaking) {
         synth.resume();
         isSpeaking = false;
@@ -59,5 +59,12 @@ speechBtn.addEventListener("click", (e) => {
     } else {
       speechBtn.innerText = "Escuchar";
     }
+  }
+});
+
+textarea.addEventListener("input", (e) => {
+  if (textarea.value.length !== 0) {
+    synth.cancel();
+    speechBtn.innerText = "Escuchar";
   }
 });

@@ -66,7 +66,6 @@ body {
   padding: 0.8rem;
   display: flex;
   justify-content: center;
-  flex: 0.6;
 }
 
 .img-box {
@@ -162,6 +161,7 @@ form .row textarea::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .outro {
@@ -171,6 +171,7 @@ form .row textarea::-webkit-scrollbar {
 form .row select {
   padding: 0 .4rem;
   height: 1.8rem;
+  width: 25dvw;
   border: none;
   border-radius: 0.45rem;
   outline: 0;
@@ -188,6 +189,7 @@ form .row select::-webkit-scrollbar-track {
 form .butom {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 form button {
@@ -196,6 +198,7 @@ form button {
   padding: 10px;
   cursor: pointer;
   border-radius: 1rem;
+  margin-bottom: .5rem;
 }
 
 form button:hover {
@@ -205,3 +208,166 @@ form button:hover {
   transition: ease .35s;
 }
 
+
+/* Responsive */
+
+
+@media (max-width: 575.98px) {
+  .speech-box {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-speech-box{
+    min-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 1rem;
+  }
+
+  .img-box{
+    display: none;
+  }
+
+  .speech-space {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .speech-space form{
+    display: flex;
+    width: 90%;
+  }
+
+  form .row {
+    width: 90%;
+  }
+
+  form .row textarea {
+    width: 100%;
+  }
+
+  form .row .outro {
+    width: 100%;
+  }
+
+  form .row select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .speech-box {
+    
+    display: flex;
+  }
+
+  .content-speech-box{
+    min-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .img-box{
+    display: none;
+  }
+
+  .speech-space {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  
+  .speech-space form{
+    display: flex;
+    width: 90%;
+  }
+  
+  form .row {
+    width: 90%;
+  }
+  
+  form .row textarea {
+    width: 100%;
+  }
+  
+  form .row .outro {
+    width: 100%;
+  }
+  
+  form .row select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .speech-box {
+    display: flex;
+  }
+
+  .content-speech-box{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .img-box{
+    display: none;
+  }
+
+  .speech-space {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .speech-space form{
+    display: flex;
+    width: 95%;
+  }
+  
+  form .row {
+    width: 90%;
+  }
+  
+  form .row textarea {
+    width: 100%;
+  }
+  
+  form .row .outro {
+    width: 100%;
+  }
+  
+  form .row select {
+    width: 100%;
+  }
+}
+
+/* Landscape mobile */
+
+@media (max-height: 450px) {
+    .speech-box {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .speech-space form {
+      flex-direction: row;
+    }
+
+}
